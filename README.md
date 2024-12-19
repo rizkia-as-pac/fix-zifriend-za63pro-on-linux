@@ -1,0 +1,1 @@
+# fix-zifriend-za63pro-on-linux

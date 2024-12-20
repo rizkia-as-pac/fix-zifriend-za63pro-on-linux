@@ -27,3 +27,7 @@ Saya memeriksa log menggunakan perintah `dmesg` dan menemukan log seperti beriku
 ```log
 error log
 ```
+
+### Solusi
+Tentu saja ini bukan solusi yang saya ciptakan sendiri. Berdasarkan log tersebut, saya melakukan pencarian di internet dan menemukan solusi di sumber berikut:
+[flask hello world](https://flask.palletsprojects.com/en/stable/quickstart/)

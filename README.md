@@ -34,6 +34,14 @@ Tentu saja ini bukan solusi yang saya ciptakan sendiri. Berdasarkan log tersebut
 
 #### 1. Temukan VendorID dan ProductID keyboard
 Untuk menemukan VendorID dan ProductID dari keyboard ini saya menggunakan cara berikut:
-[Get-VendorID-ProductID](https://kb.synology.com/en-in/DSM/tutorial/How_do_I_check_the_PID_VID_of_my_USB_device)
+[https://kb.synology.com/en-in/DSM/tutorial/How_do_I_check_the_PID_VID_of_my_USB_device](https://kb.synology.com/en-in/DSM/tutorial/How_do_I_check_the_PID_VID_of_my_USB_device)
 
-2342341241412.png
+disini saya akan mencoba mendapatkan VendorID dan ProductID menggunakan windows, alasannya karena kebetulan saya masih memiliki windows sebagai dual boot pada komputer saya dan keyboard ini juga berfungsi dengan baik pada OS windows.
+
+#### 1.1 Device Manager
+Buka device manager lalu, pilih keyboard. Disini akan ada banyak device keyboard yang dilist. Untuk menentukan mana device yang merupakan keyboard saya yang bermasalah saya hanya lepas dan pasang kembali keyboard saya dan melihat bagian mana yang hilang dan muncul kembali.
+
+<img src="https://raw.githubusercontent.com/rizkia-as-pac/fix-zifriend-za63pro-on-linux/refs/heads/main/2342341241412.png" width="600">
+
+#### 1.1 
+

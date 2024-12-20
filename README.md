@@ -39,9 +39,12 @@ Untuk menemukan VendorID dan ProductID dari keyboard ini saya menggunakan cara b
 disini saya akan mencoba mendapatkan VendorID dan ProductID menggunakan windows, alasannya karena kebetulan saya masih memiliki windows sebagai dual boot pada komputer saya dan keyboard ini juga berfungsi dengan baik pada OS windows.
 
 #### 1.1 Device Manager
-Buka device manager lalu, pilih keyboard. Disini akan ada banyak device keyboard yang dilist. Untuk menentukan mana device yang merupakan keyboard saya yang bermasalah saya hanya lepas dan pasang kembali keyboard saya dan melihat bagian mana yang hilang dan muncul kembali.
+Buka device manager lalu, pilih keyboard. Disini akan ada banyak device keyboard yang dilist. Untuk menentukan mana device yang merupakan keyboard saya yang bermasalah saya hanya lepas dan pasang kembali keyboard saya dan melihat bagian mana yang hilang dan muncul kembali. Klik kanan, lalu pilih Properties
+
+
 
 <img src="https://raw.githubusercontent.com/rizkia-as-pac/fix-zifriend-za63pro-on-linux/refs/heads/main/2342341241412.png" width="600">
 
-#### 1.1 
-
+#### 1.2 VendorID dan ProductID
+Setelah didalam Properties kita klik pada Details, lalu Property kita pilih sebagai Hardware Ids. Dari gambar berikut bisa dilihat bahwa keyboard saya VendorID nya adalah 5566 dan ProductID nya adalah 0008.
+<img src="https://raw.githubusercontent.com/rizkia-as-pac/fix-zifriend-za63pro-on-linux/refs/heads/main/3489589435689.png" width="600">

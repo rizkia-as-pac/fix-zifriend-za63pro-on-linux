@@ -31,3 +31,9 @@ error log
 ### Solusi
 Tentu saja ini bukan solusi yang saya ciptakan sendiri. Berdasarkan log tersebut, saya melakukan pencarian di internet dan menemukan solusi di sumber berikut:
 [Zifriend-Keyboard-Linux](https://github.com/ken-kuro/Zifriend-Keyboard-Linux/)
+
+#### 1. Temukan VendorID dan ProductID keyboard
+Untuk menemukan VendorID dan ProductID dari keyboard ini saya menggunakan cara berikut:
+[Get-VendorID-ProductID](https://github.com/ken-kuro/Zifriend-Keyboard-Linux/)
+
+2342341241412.png

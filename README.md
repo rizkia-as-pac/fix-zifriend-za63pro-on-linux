@@ -22,10 +22,11 @@ Setelah login ke Linux Mint, saya coba lagi menggunakan keyboard, tetapi mode wi
 ---
 
 ### Pemeriksaan Log dengan `dmesg`
-Saya memeriksa log menggunakan perintah `dmesg` dan menemukan log seperti berikut:
+Saya memeriksa log menggunakan perintah `dmesg -w` dan menemukan log seperti berikut:
 
 ```log
-error log
+[   17.656144] usb 1-2: unable to read config index 0 descriptor/start: -71
+[   17.656158] usb 1-2: can't read configurations, error -71
 ```
 
 ### Solusi
@@ -48,3 +49,33 @@ Buka device manager lalu, pilih keyboard. Disini akan ada banyak device keyboard
 #### 1.2 VendorID dan ProductID
 Setelah didalam Properties kita klik pada Details, lalu Property kita pilih sebagai Hardware Ids. Dari gambar berikut bisa dilihat bahwa keyboard saya VendorID nya adalah 5566 dan ProductID nya adalah 0008.
 <img src="https://raw.githubusercontent.com/rizkia-as-pac/fix-zifriend-za63pro-on-linux/refs/heads/main/3489589435689.png" width="600">
+
+#### 2. Mengubah Kernel Parameters
+Buka file konfigurasi GRUB
+```shell
+sudo nvim /etc/default/grub
+```
+Temukan line berikut
+```shell
+GRUB_CMDLINE_LINUX_DEFAULT
+```
+lalu tambahkan `usbcore.quirks=<VID>:<PID>:gki`pada nilai GRUB_CMDLINE_LINUX_DEFAULT.
+```shell
+# pada sistem saya defaultnya seperti berikut
+# GRUB_CMDLINE_LINUX_DEFAULT='nowatchdog nvme_load=YES loglevel=3'
+# setelah saya ubah menjadi seperti berikut
+GRUB_CMDLINE_LINUX_DEFAULT='nowatchdog nvme_load=YES loglevel=3 usbcore.quirks=5566:0008:gki'
+```
+lalu simpan perubahan tersebut.
+
+#### 3. Update GRUB
+Karna saya mennggunakan Arch linux dengan sistem UEFI, saya jalankan perintah berikut. 
+```shell
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+#### 4. Reboot sistem
+
+## Hasil akhir
+Setelah langkah-langkah diatas keyboard saya sekarang bisa digunakan kembali dengan mode wired.
+
+

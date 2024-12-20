@@ -34,6 +34,6 @@ Tentu saja ini bukan solusi yang saya ciptakan sendiri. Berdasarkan log tersebut
 
 #### 1. Temukan VendorID dan ProductID keyboard
 Untuk menemukan VendorID dan ProductID dari keyboard ini saya menggunakan cara berikut:
-[Get-VendorID-ProductID](https://github.com/ken-kuro/Zifriend-Keyboard-Linux/)
+[Get-VendorID-ProductID](https://kb.synology.com/en-in/DSM/tutorial/How_do_I_check_the_PID_VID_of_my_USB_device)
 
 2342341241412.png

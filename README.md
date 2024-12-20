@@ -30,4 +30,4 @@ error log
 
 ### Solusi
 Tentu saja ini bukan solusi yang saya ciptakan sendiri. Berdasarkan log tersebut, saya melakukan pencarian di internet dan menemukan solusi di sumber berikut:
-[flask hello world](https://flask.palletsprojects.com/en/stable/quickstart/)
+[Zifriend-Keyboard-Linux](https://github.com/ken-kuro/Zifriend-Keyboard-Linux/)
